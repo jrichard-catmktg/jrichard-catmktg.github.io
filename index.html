@@ -13,14 +13,19 @@
 						c = c.substring(1);
 					}
 					if (c.indexOf(name) == 0) {
-						document.write('found ios_cookie!');
+						document.write('Read ' + cname + '!');
 						return c.substring(name.length, c.length);
 					}
 				}
-				document.write('ios_cookie not found');
+				document.write(cname + ' not found');
 				return "";
 			}
-			getCookie('ios_cookie');
+			
+			getCookie('cookie_1');
+			
+			document.write('Writing cookie_2');
+			document.cookie = 'cookie_2=1';
+			getCookie('cookie_2');
 		</script>
 	</head>
 	<body></body>
