@@ -32,7 +32,7 @@ function checkedCookies() {
 
 // make the iframe
 (function make_iframe() {
-	document.write(unescape('%3Ciframe src="https://jrichard-catmktg.github.io" scrolling="no" frameborder="no" height="100" id="cf_iframe"'
-						+ 'style="width:100%;'
+	document.write(unescape('%3Ciframe src="https://jrichard-catmktg.github.io" scrolling="no" frameborder="no" height="400" id="cf_iframe"'
+						+ 'style="width:100%;"'
 						+ '%3E%3C/iframe%3E'));
 })();
