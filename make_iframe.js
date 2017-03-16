@@ -24,7 +24,7 @@ function checkedCookies() {
 	if (navigator.cookieEnabled && !iOS) {
 		if (!checkedCookies()) {
 			document.cookie = 'redirected=1'; // set a cookie so we don't run this again
-			window.location.replace( 'https://jrichard-catmktg.bitbucket.io/enable_cookies.html');
+			window.location.replace( 'https://jrichard-catmktg.github.io/enable_cookies.html');
 		}
 	}
 })();
