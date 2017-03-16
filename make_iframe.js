@@ -21,7 +21,7 @@ function checkedCookies() {
 // checks for iOS and try to enable cookies
 (function enableCookies() {
 	var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-	if (navigator.cookieEnabled && !iOS) {
+	if (navigator.cookieEnabled) {
 		if (!checkedCookies()) {
 			document.cookie = 'redirected=1'; // set a cookie so we don't run this again
 			window.location.replace( 'https://jrichard-catmktg.github.io/enable_cookies.html');
